@@ -12,8 +12,6 @@ import { BudgetItemCardComponent } from './budget-item-list/budget-item-card/bud
 import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.component';
 
 import { MatDialogModule } from '@angular/material';
-import { ModelsComponent } from './src/shared/models/models.component';
-import { SharedComponent } from './shared/shared.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +20,7 @@ import { SharedComponent } from './shared/shared.component';
     AddItemFormComponent,
     BudgetItemListComponent,
     BudgetItemCardComponent,
-    EditItemModalComponent,
-    ModelsComponent,
-    SharedComponent
+    EditItemModalComponent
   ],
   imports: [
     BrowserModule,
