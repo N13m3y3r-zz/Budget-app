@@ -12,6 +12,8 @@ import { BudgetItemCardComponent } from './budget-item-list/budget-item-card/bud
 import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.component';
 
 import { MatDialogModule } from '@angular/material/dialog';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   entryComponents: [EditItemModalComponent],
